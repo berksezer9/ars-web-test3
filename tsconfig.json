@@ -1,0 +1,24 @@
+//See the docs for details:
+//https://www.typescriptlang.org/docs/handbook/modules/guides/choosing-compiler-options.html#im-writing-a-library
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "target": "es2015", // set to the *lowest* target you support
+    "module": "esnext", // set to the *lowest* target you support
+    // if "moduleResolution" is not set to "node", importing peerDependencies such as "vue" or "axios" becomes
+    //problematic
+    "moduleResolution": "node",
+    "strict": true,
+    "verbatimModuleSyntax": false,
+    "declaration": true, //creates corresponding .d.ts files.
+    "sourceMap": true,
+    "declarationMap": true,
+    "baseUrl": ".", //the base url for paths
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "noEmit": false
+  },
+  "include": [
+    "./src/*"
+  ]
+}

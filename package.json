@@ -1,0 +1,48 @@
+{
+  "name": "ars-web-test3",
+  "version": "0.0.0",
+  "description": "ars-web-test3",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "UNLICENSED",
+  "private": false,
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p build-only type-check tsc-compile",
+    "build-only": "vite build",
+    "tsc-compile": "npx tsc",
+    "type-check": "vue-tsc --emitDeclarationOnly --strict"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "module": "./dist/index.js",
+    "import": "./dist/index.js",
+    "default": "./dist/index.js"
+  },
+  "peerDependencies": {
+    "@kyvg/vue3-notification": "^3.0.1",
+    "pinia": "^2.0.32",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.24.0",
+    "@kyvg/vue3-notification": "^3.2.1",
+    "@types/node": "^20.12.2",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "npm-run-all": "^4.1.5",
+    "pinia": "^2.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3",
+    "vite": "^5.2.7",
+    "vue": "^3.2.47",
+    "vue-tsc": "^1.2.0"
+  }
+}
