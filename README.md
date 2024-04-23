@@ -170,3 +170,4 @@ notifyAboutSuccess({
 Likewise, you can also create a MyNotification.vue component, and add a myNotify function to
 src/services/notification.ts; then call myNotify to make a notification.
 
+# js-storage
